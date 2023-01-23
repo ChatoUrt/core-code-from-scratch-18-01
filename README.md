@@ -17,3 +17,25 @@ function likes(names) {
 ```
 
 ---
+## ---Bit counter---
+
+* [Test](https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript)
+
+Solution / /
+
+``` javascript
+var countBits = function(n) {
+  let txt;
+  let binary;
+  let arr;
+  if (n > 0) {
+    txt = n.toString(2);
+    binary = txt.replace(/[0]/gi, '');
+    arr = binary.split('');
+  return arr.length
+  } else return n;
+}
+```
+
+---
+## ---
