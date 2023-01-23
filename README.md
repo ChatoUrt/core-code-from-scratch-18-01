@@ -38,4 +38,19 @@ var countBits = function(n) {
 ```
 
 ---
-## ---
+## ---Let's order---
+
+* [Test](https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript)
+
+Solution / /
+
+``` javascript
+function order(words) {
+  let orderW = words.split(' ').sort((a,b) => {
+    let a1 = Number(a.replace(/[A-Za-z]/g, ''));
+    let b1 = Number(b.replace(/[A-Za-z]/g, ''));
+    return a1 - b1;
+  });
+  return orderW
+}
+```
